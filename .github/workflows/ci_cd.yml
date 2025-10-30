@@ -78,7 +78,8 @@ jobs:
             k8s/service.yaml
           images: |
             neighbourhood.azurecr.io/neighbourhood:v1
-          strategy: apply
+          strategy: basic
+          namespace: default
 
       # 🔟 Show deployed service info
       - name: Show AKS services
